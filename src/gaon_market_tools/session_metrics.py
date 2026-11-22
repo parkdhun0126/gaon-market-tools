@@ -26,7 +26,7 @@ def _day(value: object) -> str|None:
     except ValueError: return None
     return raw
 
-def _decimal(value: object) -> Decimal | None:
+def _decimal(value: object) -> Decimal|None:
     try:
         number=Decimal(str(value))
         return number if number.is_finite() else None
